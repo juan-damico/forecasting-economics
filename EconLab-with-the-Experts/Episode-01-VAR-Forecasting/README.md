@@ -1,6 +1,11 @@
-# Episode 01 — Topic name
+# Episode 01 — VAR Forecasting
 
 ## Presenter
+
+<p align="center">
+  <img src="presenter/jamel.jpg" width="150">
+</p>
+
 | Field        | Information |
 |-------------|------------|
 | Name        | Jamel Saadoui, PhD |
@@ -13,6 +18,22 @@
 ## Overview
 
 This tutorial introduces a bivariate VAR model and demonstrates how to implement and interpret it for forecasting applications.
+
+---
+
+## Mathematical Representation
+
+Consider a bivariate VAR(1) model:
+
+Y_t = A Y_{t-1} + ε_t
+
+where:
+
+- \( Y_t \) is a vector of endogenous variables  
+- \( A \) is the coefficient matrix  
+- \( \varepsilon_t \) is a vector of error terms  
+
+This framework captures the dynamic relationships between variables over time.
 
 ---
 
@@ -38,6 +59,16 @@ This tutorial introduces a bivariate VAR model and demonstrates how to implement
 
 - R / Python / Stata  
 - Required packages (list here)
+
+---
+
+## Results
+
+Below is an example of the model output:
+
+![Impulse Response Function](figures/irf.png)
+
+The figure illustrates the response of one variable to a shock in another, highlighting the dynamic interactions captured by the model.
 
 ---
 
