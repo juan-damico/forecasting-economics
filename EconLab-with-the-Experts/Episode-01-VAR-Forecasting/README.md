@@ -4,7 +4,7 @@
 ![Language](https://img.shields.io/badge/R-4.3-276DC3?style=flat-square&logo=r&logoColor=white)
 ![Status](https://img.shields.io/badge/status-replication--ready-4a7c59?style=flat-square)
 ![Series](https://img.shields.io/badge/EconLab-Episode%2001-1a1a2e?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-gray?style=flat-square)
+![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-lightgrey?style=flat-square)
 
 ---
 
@@ -79,12 +79,27 @@ The figure compares in-sample fitted values against observed data. The model cap
 
 ---
 
+## Repository Structure
+
+```
+Episode-01-VAR-Forecasting/
+├── code/           # Replication scripts
+├── data/           # Dataset
+├── figures/        # Output figures and plots
+├── paper/          # References and related readings
+├── presenter/      # Presenter photo and bio
+├── slides/         # Presentation slides
+└── README.md
+```
+
+---
+
 ## Quick Start
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-org/econlab-ep01-var.git
-cd econlab-ep01-var
+git clone https://github.com/your-org/Episode-01-VAR-Forecasting.git
+cd Episode-01-VAR-Forecasting
 
 # 2. Install required packages (R)
 Rscript code/install_packages.R
@@ -93,27 +108,6 @@ Rscript code/install_packages.R
 Rscript code/main.R
 
 # 4. Outputs will appear in figures/
-```
-
----
-
-## Repository Structure
-
-```
-econlab-ep01-var/
-├── code/
-│   ├── main.R              # Main replication script
-│   ├── var_estimation.R    # VAR estimation functions
-│   └── install_packages.R  # Package setup
-├── data/
-│   └── dataset.csv         # Raw dataset
-├── figures/
-│   └── actual_vs_fitted_foreign.png
-├── slides/
-│   └── ep01_var_forecasting.pdf
-├── paper/
-│   └── references.bib
-└── README.md
 ```
 
 ---
@@ -142,7 +136,6 @@ All results in this tutorial are fully replicable. Run the scripts in the follow
 
 ```r
 source("code/install_packages.R")   # Install dependencies
-source("code/var_estimation.R")     # Load estimation functions
 source("code/main.R")               # Run full analysis
 ```
 
@@ -152,40 +145,40 @@ Expected runtime: < 1 minute on a standard laptop.
 
 ## Citation
 
-If you use this material in your research or teaching, please cite:
+If you use this material in your research or teaching, please cite the intellectual author of this episode:
 
 ```bibtex
 @misc{saadoui2025var,
   author    = {Saadoui, Jamel},
   title     = {VAR Forecasting — {EconLab} Tutorial Series, Episode 01},
   year      = {2025},
-  publisher = {GitHub},
-  url       = {https://github.com/your-org/econlab-ep01-var}
+  publisher = {Forecasting Economics — EconLab with Experts},
+  url       = {https://github.com/your-org/Episode-01-VAR-Forecasting}
 }
 ```
 
 ---
 
 ## License & Intellectual Property
- 
+
 This material is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
- 
+
 © **Forecasting Economics — EconLab with Experts**. All rights reserved.
- 
+
 The replication code, slides, and all intellectual content are the property of **Forecasting Economics — EconLab with Experts** and of the episode presenter as the intellectual author of the material.
- 
+
 **You may not:**
 - Use this material for commercial purposes or economic gain
 - Reproduce, distribute, or adapt this content without proper citation
 - Use the replication code without citing the intellectual author
- 
+
 **If you use this material, you must cite:**
 - The presenter/author of the episode (see Presenter section above)
 - This repository and Forecasting Economics as the source
- 
+
 For permissions, licensing inquiries, or any questions on proper use, contact:  
 📧 [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com)
- 
+
 ---
- 
-<sub>EconLab with the Experts · Forecasting Economics · 2026 </sub>
+
+<sub>EconLab with Experts · Forecasting Economics · 2026</sub>
