@@ -25,7 +25,9 @@ This tutorial introduces a bivariate VAR model and demonstrates how to implement
 
 Consider a bivariate VAR(1) model:
 
-Y_t = A Y_{t-1} + ε_t
+$$
+Y_t = A Y_{t-1} + \varepsilon_t
+$$
 
 where:
 
@@ -34,6 +36,16 @@ where:
 - \( \varepsilon_t \) is a vector of error terms  
 
 This framework captures the dynamic relationships between variables over time.
+
+---
+
+## Results
+
+Below is an example of the model output:
+
+![Impulse Response Function](figures/irf.png)
+
+The figure illustrates the response of one variable to a shock in another, highlighting the dynamic interactions captured by the model.
 
 ---
 
@@ -59,16 +71,6 @@ This framework captures the dynamic relationships between variables over time.
 
 - R / Python / Stata  
 - Required packages (list here)
-
----
-
-## Results
-
-Below is an example of the model output:
-
-![Impulse Response Function](figures/irf.png)
-
-The figure illustrates the response of one variable to a shock in another, highlighting the dynamic interactions captured by the model.
 
 ---
 
