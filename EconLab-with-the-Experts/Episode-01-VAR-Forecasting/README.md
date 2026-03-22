@@ -1,4 +1,4 @@
-# EconLab Tutorial Series
+# EconLab with the Experts
 ## Episode 01 — VAR Forecasting
 
 ![Language](https://img.shields.io/badge/R-4.3-276DC3?style=flat-square&logo=r&logoColor=white)
