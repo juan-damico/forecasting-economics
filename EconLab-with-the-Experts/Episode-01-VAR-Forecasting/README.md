@@ -22,8 +22,7 @@ This tutorial introduces a bivariate VAR model and demonstrates how to implement
 ---
 ## Video Tutorial
 
-[![Watch the tutorial](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-
+[![Watch the tutorial](https://img.youtube.com/vi/SAfLK8Ji2ZM/0.jpg)](https://www.youtube.com/watch?v=SAfLK8Ji2ZM)
 ---
 
 ## Mathematical Representation
@@ -50,7 +49,7 @@ Below is an example of the model output:
 
 ![Impulse Response Function](figures/actual_vs_fitted_foreign.png)
 
-The figure illustrates the response of one variable to a shock in another, highlighting the dynamic interactions captured by the model.
+The figure illustrates the........
 
 ---
 
