@@ -30,8 +30,8 @@ Every tutorial is built around real data, real code, and real results. Most cont
 
 **Juan Nicolás D'Amico**  
 *Economist · Statistics Canada*  
-BA in Economics, University of Buenos Aires  
-MSc in Business Economics, Wilfrid Laurier University  
+BSc in Economics, University of Buenos Aires  
+MA in Business Economics, Wilfrid Laurier University  
 MA in Economics, University of Waterloo  
 
 📧 [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com) &nbsp;·&nbsp;
