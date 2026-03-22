@@ -31,7 +31,7 @@ Every tutorial is built around real data, real code, and real results. Most cont
 
 ## Creator
 
-<img src="https://raw.githubusercontent.com/juan-damico/forecasting-economics/main/assets/juanid.jpg" width="100" align="left" style="margin-right:16px; margin-bottom:8px;">
+<img src="https://avatars.githubusercontent.com/u/270029708?v=4" width="100" align="left" style="margin-right:16px; margin-bottom:8px;">
 
 **Juan Nicolás D'Amico**  
 *Economist · Statistics Canada*  
