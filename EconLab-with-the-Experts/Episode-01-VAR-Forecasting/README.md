@@ -166,24 +166,26 @@ If you use this material in your research or teaching, please cite:
 
 ---
 
-## About EconLab
-
-**EconLab** is a tutorial series where economists and practitioners share hands-on applied economics techniques. Each episode covers a specific method, implemented end-to-end with real data and replicable code.
-
-| Episode | Topic | Presenter |
-|---------|-------|-----------|
-| 01 | VAR Forecasting | Jamel Saadoui |
-| 02 | *Coming soon* | — |
-| 03 | *Coming soon* | — |
-
-→ Follow the series: [GitHub Organization](https://github.com) &nbsp;·&nbsp; [YouTube Playlist](https://youtube.com)
-
+## License & Intellectual Property
+ 
+This material is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+ 
+© **Forecasting Economics — EconLab with Experts**. All rights reserved.
+ 
+The replication code, slides, and all intellectual content are the property of **Forecasting Economics — EconLab with Experts** and of the episode presenter as the intellectual author of the material.
+ 
+**You may not:**
+- Use this material for commercial purposes or economic gain
+- Reproduce, distribute, or adapt this content without proper citation
+- Use the replication code without citing the intellectual author
+ 
+**If you use this material, you must cite:**
+- The presenter/author of the episode (see Presenter section above)
+- This repository and Forecasting Economics as the source
+ 
+For permissions, licensing inquiries, or any questions on proper use, contact:  
+📧 [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com)
+ 
 ---
-
-## License
-
-This repository is released under the [MIT License](LICENSE). You are free to use, adapt, and share this material with attribution.
-
----
-
+ 
 <sub>EconLab · Applied Economics Tutorial Series · 2025</sub>
