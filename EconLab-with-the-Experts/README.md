@@ -33,7 +33,7 @@ Each episode walks through a real empirical problem — from raw data to code to
 
 | # | Topic | Presenter | Affiliation | Video | Repo |
 |---|-------|-----------|-------------|:-----:|:----:|
-| [01](./Episode-01-VAR-Forecasting) | **VAR Forecasting** | Jamel Saadoui, PhD | University X | [![▶](https://img.shields.io/badge/▶-Watch-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtube.com) | [![⌥](https://img.shields.io/badge/⌥-Code-1a1a2e?style=flat-square&logo=github&logoColor=white)](./Episode-01-VAR-Forecasting) |
+| [01](./Episode-01-VAR-Forecasting) | **TBC** | Jamel Saadoui, PhD | University of Paris 8 | [![▶](https://img.shields.io/badge/▶-Watch-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtube.com) | [![⌥](https://img.shields.io/badge/⌥-Code-1a1a2e?style=flat-square&logo=github&logoColor=white)](./Episode-01-VAR-Forecasting) |
 | 02 | *Coming soon* | — | — | — | — |
 | 03 | *Coming soon* | — | — | — | — |
 
