@@ -2,25 +2,19 @@
 
 ## Presenter
 
-<table>
-<tr>
-<td width="30%" align="center">
+<p align="center">
+  <img src="presenter/jamel.jpg" width="140">
+</p>
 
-<img src="presenter/jamel.jpg" width="150">
+<p align="center">
+<b>Jamel Saadoui, PhD</b><br>
+University X
+</p>
 
-</td>
-<td width="70%">
-
-| Field        | Information |
-|-------------|------------|
-| Name        | Jamel Saadoui, PhD |
-| Affiliation | University X |
-| Email       | [email@domain.com](mailto:email@domain.com) |
-| LinkedIn    | [Profile](https://linkedin.com) |
-
-</td>
-</tr>
-</table>
+<p align="center">
+📧 <a href="mailto:email@domain.com">email@domain.com</a><br>
+🔗 <a href="https://linkedin.com">LinkedIn</a>
+</p>
 
 ## Overview
 
