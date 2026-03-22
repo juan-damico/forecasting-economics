@@ -1,17 +1,26 @@
-# Episode 01 — Topic title
+# Episode 01 — Topic name
 
 ## Presenter
 | Field        | Information |
 |-------------|------------|
-| Name        | Jamel Saadoui, Phd. |
+| Name        | Jamel Saadoui, PhD |
 | Affiliation | University X |
 | Email       | [email@domain.com](mailto:email@domain.com) |
 | LinkedIn    | [Profile](https://linkedin.com) |
+
 ---
 
 ## Overview
 
-This tutorial introduces a bivariate VAR model and shows how to implement it for forecasting.
+This tutorial introduces a bivariate VAR model and demonstrates how to implement and interpret it for forecasting applications.
+
+---
+
+## Quick Start
+
+1. Go to the `code/` folder  
+2. Run the main script  
+3. Check the results in `figures/`
 
 ---
 
@@ -27,7 +36,7 @@ This tutorial introduces a bivariate VAR model and shows how to implement it for
 
 ## Requirements
 
-- R / Python / Stata
+- R / Python / Stata  
 - Required packages (list here)
 
 ---
