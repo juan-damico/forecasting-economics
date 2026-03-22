@@ -2,7 +2,7 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/juan-damico/forecasting-economics/main/assets/Logo-2.png" width="320" alt="Forecasting Economics"/>
+<img src="https://raw.githubusercontent.com/juan-damico/forecasting-economics/main/assets/Large-2.png" width="320" alt="Forecasting Economics"/>
 
 <br/><br/>
 
