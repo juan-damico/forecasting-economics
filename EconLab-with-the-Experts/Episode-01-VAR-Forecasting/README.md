@@ -24,6 +24,8 @@ This tutorial introduces a bivariate VAR model and demonstrates how to implement
 
 [![Watch the tutorial](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
+---
+
 ## Mathematical Representation
 
 Consider a bivariate VAR(1) model:
@@ -34,9 +36,9 @@ $$
 
 where:
 
-- \( Y_t \) is a vector of endogenous variables  
-- \( A \) is the coefficient matrix  
-- \( \varepsilon_t \) is a vector of error terms  
+-  $Y_t$ is a vector of endogenous variables  
+- $A$ is the coefficient matrix  
+- $\varepsilon_t$ is a vector of error terms  
 
 This framework captures the dynamic relationships between variables over time.
 
