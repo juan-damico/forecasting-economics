@@ -78,34 +78,11 @@ git sparse-checkout set EconLab-with-the-Experts/Episode-01-VAR-Forecasting
 
 **EconLab is actively seeking experts to present in upcoming episodes.**
 
-The series addresses a persistent gap in academic training: while most research is communicated in theoretical terms, there is limited exposure to **practical implementation using real data and replicable workflows**. EconLab bridges this gap by centering every session on a hands-on, reproducible application.
+We welcome PhD economists, academic researchers, faculty, and practitioners with a strong applied focus who are interested in sharing their work with a global community of economists, students, and enthusiasts.
 
-**Who presents:**
-
-- PhD economists and academic researchers
-- Faculty and professors with applied work
-- Domain experts with a strong quantitative focus
-
-**What the format looks like:**
-
-- 20–45 minute session hosted via Teams or similar platform
-- Structured around a live implementation: slides + code + data
-- Moderated Q&A focused on facilitating discussion, not critique
-- Conversational and accessible — rigorous content, relaxed delivery
-
-**What you get:**
-
-- Exposure to a global audience of economists, researchers, and practitioners
-- Promotion across YouTube, LinkedIn, Medium, Instagram, and TikTok
-- A replicable GitHub repository showcasing your work
-- Increased visibility for citations, collaborations, and professional opportunities
-- Your professional links shared with the audience at the end of the session
-
-**Interested in presenting?**
+If you are interested in contributing, reach out and you will receive a full package with all the details, guidelines, and templates needed to prepare your session.
 
 📧 [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com)
-
-Selected presenters will receive a detailed brochure with guidelines, slide templates, and all supporting materials needed to prepare and deliver their session.
 
 ---
 
