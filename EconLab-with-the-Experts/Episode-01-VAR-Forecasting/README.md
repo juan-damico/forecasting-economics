@@ -2,7 +2,7 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/juan-damico/forecasting-economics/main/assets/EconLab2.png" width="450" alt="EconLab with the Experts"/>
+<img src="https://raw.githubusercontent.com/juan-damico/forecasting-economics/main/assets/EconLab_Logo2.png" width="320" alt="EconLab with the Experts"/>
 
 <br/><br/>
 
@@ -19,18 +19,26 @@
 
 ## Presenter
 
-<img src="presenter/jamel.jpg" width="110" align="left" style="margin-right:16px; margin-bottom:8px;">
+<div align="center">
 
-**Jamel Saadoui, PhD** · University X  
-*Current Role (i.e., Professor, Researcher, Economist at XX, etc.)*  
+<img src="presenter/jamel.jpg" width="160" style="border-radius:50%;" alt="Jamel Saadoui"/>
+
+<br/><br/>
+
+### Jamel Saadoui, PhD
+
+**University X** · *Professor / Researcher / Economist*
+
 Fields: Applied Macroeconomics · Political Economics · International Economics
 
-📧 [email@domain.com](mailto:email@domain.com) &nbsp;·&nbsp;
-🔗 [LinkedIn](https://www.linkedin.com/in/pr-jamel-saadaoui-7979461a5/) &nbsp;·&nbsp;
-📄 [Google Scholar](https://scholar.google.com/citations?user=DkhUQ-gAAAAJ&hl=en&oi=ao) &nbsp;·&nbsp;
-📑 [SSRN](https://ssrn.com)
+<br/>
 
-<br clear="left">
+[![Email](https://img.shields.io/badge/Email-2c2c2c?style=for-the-badge&logo=gmail&logoColor=white)](mailto:email@domain.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pr-jamel-saadaoui-7979461a5/)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=DkhUQ-gAAAAJ&hl=en&oi=ao)
+[![SSRN](https://img.shields.io/badge/SSRN-154881?style=for-the-badge&logoColor=white)](https://ssrn.com)
+
+</div>
 
 ---
 
