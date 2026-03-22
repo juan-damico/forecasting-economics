@@ -87,7 +87,6 @@ Episode-01-VAR-Forecasting/
 ├── data/           # Dataset
 ├── figures/        # Output figures and plots
 ├── paper/          # References and related readings
-├── presenter/      # Presenter photo and bio
 ├── slides/         # Presentation slides
 └── README.md
 ```
