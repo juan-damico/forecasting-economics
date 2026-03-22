@@ -2,95 +2,141 @@
 
 # Forecasting Economics
 
-**Applied econometrics · Time series analysis · Forecasting**
+**Applied Econometrics · Time Series Analysis · Macroeconomic Forecasting**
 
-![Series](https://img.shields.io/badge/EconLab-with%20the%20Experts-1a1a2e?style=flat-square)
-![Status](https://img.shields.io/badge/status-active-4a7c59?style=flat-square)
-![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-lightgrey?style=flat-square)
-![YouTube](https://img.shields.io/badge/YouTube-Forecasting%20Economics-FF0000?style=flat-square&logo=youtube&logoColor=white)
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtube.com/@ForecastingEconomics)
+[![Website](https://img.shields.io/badge/Website-forecastingeconomics.com-1a1a2e?style=flat-square&logo=google-chrome&logoColor=white)](https://www.forecastingeconomics.com)
+[![Medium](https://img.shields.io/badge/Medium-Articles-000000?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@forecastingeconomics)
+[![Udemy](https://img.shields.io/badge/Udemy-Courses-A435F0?style=flat-square&logo=udemy&logoColor=white)](https://www.udemy.com/user/juan-damico)
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-lightgrey?style=flat-square)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 </div>
 
 ---
 
-## EconLab with the Experts
+## What is Forecasting Economics?
 
-**EconLab** is a webinar series where leading economists and practitioners share hands-on implementations of applied research methods. Each episode features an expert walking through a real empirical problem — from data to code to results.
+**Forecasting Economics** is a YouTube channel and open educational platform dedicated to applied econometrics, time series analysis, and macroeconomic forecasting. Founded in 2020, it has grown into a global community of economists, researchers, students, and finance professionals.
 
-The series is designed for researchers, PhD students, and professionals who want to go beyond theory and engage with the tools and methods used at the frontier of applied economics.
+The goal is straightforward: make rigorous applied economics **accessible, practical, and replicable** — for learners at every level, anywhere in the world.
+
+Every tutorial is built around real data, real code, and real results. Most content is completely free.
 
 ---
 
-## What Each Episode Includes
+## Creator
+
+<img src="https://www.forecastingeconomics.com/juan.jpg" width="100" align="left" style="margin-right:16px; margin-bottom:8px;">
+
+**Juan Nicolás D'Amico**  
+*Economist · Statistics Canada*  
+BA in Economics, University of Buenos Aires  
+MSc in Business Economics, Wilfrid Laurier University  
+MA in Economics, University of Waterloo  
+
+📧 [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com) &nbsp;·&nbsp;
+🌐 [forecastingeconomics.com](https://www.forecastingeconomics.com) &nbsp;·&nbsp;
+📍 Southern Ontario, Canada
+
+<br clear="left">
+
+---
+
+## Content & Playlists
+
+| Playlist | Topics Covered |
+|----------|----------------|
+| 📈 **Time Series** | ARIMA, GARCH, VAR, SVAR, VECM, BVAR, Kalman filter, Markov switching |
+| 🔮 **Forecasting** | Out-of-sample evaluation, forecast combination, density forecasting, scenario analysis |
+| 📐 **Econometrics** | OLS, IV, DiD, panel data, quantile regression, logit/probit, Tobit |
+| 🤖 **Machine Learning** | Random forests, XGBoost, LightGBM, neural networks, nowcasting |
+| 💹 **Finance & Quant** | Portfolio optimization, volatility forecasting, Monte Carlo, Black-Scholes, pair trading |
+| ⚙️ **DSGE Models** | RBC, New Keynesian, financial frictions, heterogeneous agents |
+| 🌍 **Applied Macro** | Solow, Ramsey, OLG, recession prediction, SVAR scenario analysis |
+| 💻 **Software** | R, Stata, EViews, Python, MATLAB, Dynare, LaTeX/Overleaf |
+
+▶️ [Browse all playlists →](https://youtube.com/@ForecastingEconomics/playlists)
+
+---
+
+## Most Watched
+
+| # | Video | Views |
+|---|-------|-------|
+| 🥇 | [How to Add Bibliography in LaTeX (Overleaf/BibTeX)](https://youtube.com) | 131,599 |
+| 🥈 | [ARIMA Models in EViews — Box Jenkins Method](https://youtube.com) | 110,052 |
+| 🥉 | [VAR Models in EViews — Step by Step](https://youtube.com) | 92,967 |
+
+---
+
+## EconLab with the Experts
+
+**EconLab** is a webinar series where leading academics and practitioners present hands-on applied research — from raw data to replicable results. Each episode comes with a full GitHub repository including code, data, slides, and references.
+
+📂 [Explore EconLab episodes →](./EconLab-with-the-Experts)
+
+| Episode | Topic | Presenter |
+|---------|-------|-----------|
+| [01](./EconLab-with-the-Experts/Episode-01-VAR-Forecasting) | VAR Forecasting | Jamel Saadoui, PhD |
+| 02 | *Coming soon* | — |
+| 03 | *Coming soon* | — |
+
+---
+
+## Get Involved
+
+There are many ways to be part of the Forecasting Economics community:
 
 | | |
 |---|---|
-| 📂 `code/` | Fully replicable scripts |
-| 📊 `data/` | Dataset used in the tutorial |
-| 📈 `figures/` | All output figures and results |
-| 📑 `slides/` | Presentation slides |
-| 📚 `paper/` | References and further reading |
+| ▶️ **Watch & Subscribe** | [Subscribe on YouTube](https://youtube.com/@ForecastingEconomics) and never miss a new episode |
+| ❤️ **Become a Member** | [Join the YouTube channel membership](https://youtube.com/@ForecastingEconomics/membership) and support the project directly |
+| 🎓 **Take a Course** | [Enroll in a premium course on Udemy](https://www.udemy.com/user/juan-damico) for structured, in-depth learning |
+| ✍️ **Read on Medium** | [Follow on Medium](https://medium.com/@forecastingeconomics) for written tutorials and articles |
+| ⭐ **Star this repo** | Help others discover the replication materials |
+| 🔁 **Share** | Share episodes and tutorials with your students, colleagues, and network |
 
 ---
 
-## Episode Index
+## Work With Me
 
-| Episode | Topic | Presenter | Affiliation | Links |
-|---------|-------|-----------|-------------|-------|
-| 01 | [VAR Forecasting](./Episode-01-VAR-Forecasting) | Jamel Saadoui, PhD | University X | [![YouTube](https://img.shields.io/badge/-video-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtube.com) [![Code](https://img.shields.io/badge/-repo-1a1a2e?style=flat-square&logo=github&logoColor=white)](./Episode-01-VAR-Forecasting) |
-| 02 | *Coming soon* | — | — | — |
-| 03 | *Coming soon* | — | — | — |
+Open to collaborations across academic and professional contexts:
 
----
-
-## Topics Covered
-
-The series spans methods across:
-
-- **Time Series** — VAR, ARIMA, state-space models, cointegration
-- **Forecasting** — out-of-sample evaluation, forecast combination, density forecasting
-- **Causal Inference** — DiD, IV, RDD, synthetic control
-- **Macro & Finance** — DSGE, factor models, asset pricing, risk
-- **Machine Learning in Economics** — LASSO, random forests, nowcasting
-
----
-
-## How to Use This Repository
-
-Each episode lives in its own folder. Clone the full series or a single episode:
-
-```bash
-# Full series
-git clone https://github.com/your-org/EconLab-with-the-Experts.git
-
-# Single episode
-git clone --filter=blob:none --sparse https://github.com/your-org/EconLab-with-the-Experts.git
-cd EconLab-with-the-Experts
-git sparse-checkout set Episode-01-VAR-Forecasting
-```
-
----
-
-## Contributing & Presenting
-
-Are you an economist or practitioner interested in presenting an episode?
-
-We welcome applications from PhD researchers, faculty, and industry professionals working on applied topics in economics, finance, and related fields.
+| Type | Description |
+|------|-------------|
+| 🎙️ **EconLab Presentation** | Present your research to a global applied economics audience |
+| 🤝 **Co-authorship** | Joint research in applied econometrics, time series, or forecasting |
+| 📚 **Academic Collaboration** | Educational content, case studies, or tutorials |
+| 🏢 **Consulting** | Applied econometrics, forecasting models, and data analysis for firms and institutions |
+| 📊 **Market Research** | Economic analysis and quantitative research for industry |
+| 🎓 **Training & Workshops** | Custom econometrics and forecasting workshops for teams or institutions |
 
 📧 [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com)
 
 ---
 
-## License & Intellectual Property
+## Connect
 
-All content in this repository is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+<div align="center">
 
-© **Forecasting Economics — EconLab with Experts**. All rights reserved.
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@ForecastingEconomics)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/juan-damico)
+[![Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@forecastingeconomics)
+[![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=udemy&logoColor=white)](https://www.udemy.com/user/juan-damico)
+[![Website](https://img.shields.io/badge/Website-1a1a2e?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.forecastingeconomics.com)
 
-Content may not be used for commercial purposes or reproduced without proper citation. Each episode's intellectual content belongs to its presenter as the author. For permissions, contact [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com).
+</div>
+
+---
+
+## License
+
+All content is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).  
+© **Forecasting Economics — Juan Nicolás D'Amico**. All rights reserved.  
+For permissions: [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com)
 
 ---
 
 <div align="center">
-<sub>EconLab with Experts · Forecasting Economics · 2026</sub>
+<sub>Forecasting Economics · Juan Nicolás D'Amico · Southern Ontario, Canada · 2026</sub>
 </div>
