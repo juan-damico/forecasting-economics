@@ -3,11 +3,10 @@
 ## Presenter
 | Field        | Information |
 |-------------|------------|
-| Name        | Presenter Name |
-| Affiliation | Institution |
-| Email       | email@domain.com |
+| Name        | Jamel Saadoui, Phd. |
+| Affiliation | University X |
+| Email       | [email@domain.com](mailto:email@domain.com) |
 | LinkedIn    | [Profile](https://linkedin.com) |
-
 ---
 
 ## Overview
