@@ -14,11 +14,11 @@
 
 **Jamel Saadoui, PhD** · University X  
 *Applied Economics · EconLab*  
-Fields: Macroeconomics · International Finance · Forecasting
+Fields: Applied Macroeconomics · Political Economics · International Economics
 
 📧 [email@domain.com](mailto:email@domain.com) &nbsp;·&nbsp;
-🔗 [LinkedIn](https://linkedin.com) &nbsp;·&nbsp;
-📄 [Google Scholar](https://scholar.google.com) &nbsp;·&nbsp;
+🔗 [LinkedIn](https://www.linkedin.com/in/pr-jamel-saadaoui-7979461a5/) &nbsp;·&nbsp;
+📄 [Google Scholar](https://scholar.google.com/citations?user=DkhUQ-gAAAAJ&hl=en&oi=ao) &nbsp;·&nbsp;
 📑 [SSRN](https://ssrn.com)
 
 <br clear="left">
