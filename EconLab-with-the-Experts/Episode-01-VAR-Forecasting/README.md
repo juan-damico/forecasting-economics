@@ -6,7 +6,7 @@
 
 <br/><br/>
 
-## Episode 01 — VAR Forecasting
+## Episode 01 — Topic To be Confirmed
 
 ![Language](https://img.shields.io/badge/R-4.3-276DC3?style=flat-square&logo=r&logoColor=white)
 ![Status](https://img.shields.io/badge/status-replication--ready-4a7c59?style=flat-square)
