@@ -436,7 +436,7 @@ code { font-family: var(--mono); font-size: 0.85em; background: var(--bg3); padd
 }
 .foot-nav a:hover { color: #e8e6e0; }
 .foot-copy {
-  font-family: var(--mono); font-size: 10px; color: rgba(255,255,255,0.18);
+  font-family: var(--mono); font-size: 10px; color: rgba(255,255,255,0.65);
   letter-spacing: 0.08em; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.07);
 }
 .foot-copy a { color: #6b7280; border-bottom: 1px solid rgba(255,255,255,0.12); }
