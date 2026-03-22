@@ -2,7 +2,7 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/juan-damico/forecasting-economics/main/assets/Large-2.png" width="320" alt="Forecasting Economics"/>
+<img src="https://raw.githubusercontent.com/juan-damico/forecasting-economics/main/assets/Logo-2.png" width="320" alt="Forecasting Economics"/>
 
 <br/><br/>
 
@@ -31,7 +31,7 @@ Every tutorial is built around real data, real code, and real results. Most cont
 
 ## Creator
 
-<img src="https://www.forecastingeconomics.com/juan.jpg" width="100" align="left" style="margin-right:16px; margin-bottom:8px;">
+<img src="https://raw.githubusercontent.com/juan-damico/forecasting-economics/main/assets/juanid.jpg" width="100" align="left" style="margin-right:16px; margin-bottom:8px;">
 
 **Juan Nicolás D'Amico**  
 *Economist · Statistics Canada*  
