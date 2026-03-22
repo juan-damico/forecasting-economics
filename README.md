@@ -1,6 +1,10 @@
 <div align="center">
 
-# Forecasting Economics
+<br/>
+
+<img src="https://raw.githubusercontent.com/juan-damico/forecasting-economics/main/assets/Logo-2.png" width="320" alt="Forecasting Economics"/>
+
+<br/><br/>
 
 **Applied Econometrics · Time Series Analysis · Macroeconomic Forecasting**
 
@@ -113,6 +117,8 @@ I welcome inquiries for academic, research, and professional engagements in appl
 
 📧 [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com) &nbsp;·&nbsp; 🔗 [All links](https://juandamico.start.page/)
 
+---
+
 ## Connect
 
 <div align="center">
@@ -122,7 +128,7 @@ I welcome inquiries for academic, research, and professional engagements in appl
 [![Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@juan-damico)
 [![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=udemy&logoColor=white)](https://www.udemy.com/course/introductory-course-to-dsge-models-in-matlab-dynare/?referralCode=628649706C663C97CDA4)
 [![Store](https://img.shields.io/badge/Store-4a7c59?style=for-the-badge&logo=shopify&logoColor=white)](https://jdeconomicstore.com)
-[![Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=juan-damico)
+[![Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=cuTdiWkAAAAJ&hl=en)
 [![All Links](https://img.shields.io/badge/All%20Links-juandamico.start.page-orange?style=for-the-badge)](https://juandamico.start.page/)
 
 </div>
