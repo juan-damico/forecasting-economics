@@ -113,38 +113,6 @@ I welcome inquiries for academic, research, and professional engagements in appl
 
 📧 [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com) &nbsp;·&nbsp; 🔗 [All links](https://juandamico.start.page/)
 
----
-## 🎙️ EconLab with Experts — Call for Presenters
-
-EconLab with Experts is a research-oriented seminar series featuring PhD-level economists and subject-matter experts presenting **hands-on, fully reproducible applications** of their work.
-
-The series is designed to address a key gap in academic training: while most research is presented in highly theoretical terms, there is limited exposure to **practical implementation using real data and replicable workflows**.
-
-EconLab aims to bridge this gap by focusing on:
-
-- Applied macroeconomics and DSGE modeling  
-- Econometrics and time series methods  
-- Forecasting and empirical applications  
-- Quantitative and policy-oriented analysis  
-
-**Presentation format**:  
-Each session is centered on a **hands-on replication or implementation**, enabling the audience to understand, reproduce, and extend the analysis in practice.
-
-Presenters are typically:
-- PhD economists  
-- Academic researchers and professors  
-- Domain experts with a strong applied focus  
-
-If you are interested in presenting your work in a practical, implementation-focused format:
-
-📧 [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com)
-
-Selected presenters will receive a detailed brochure including guidelines, templates, and supporting materials to prepare and deliver their session.
-
----
-
-Present your work to a **global audience of economists, researchers, and practitioners** through a leading niche YouTube channel focused on applied and reproducible economics.
-
 ## Connect
 
 <div align="center">
