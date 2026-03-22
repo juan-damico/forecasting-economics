@@ -48,7 +48,7 @@ This framework captures the dynamic relationships between variables over time.
 
 Below is an example of the model output:
 
-![Impulse Response Function](figures/irf.png)
+![Impulse Response Function](figures/actual_vs_fitted_foreign.png)
 
 The figure illustrates the response of one variable to a shock in another, highlighting the dynamic interactions captured by the model.
 
