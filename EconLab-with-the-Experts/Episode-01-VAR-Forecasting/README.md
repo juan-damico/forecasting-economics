@@ -5,7 +5,7 @@
 <img src="presenter/jamel.jpg" width="90" align="left" style="margin-right:16px">
 
 **Jamel Saadoui, PhD** · University X  
-*Applied Economics · EconLab*  
+*Field: Economics, Microeconomics, Finance*  
 
 📧 [email@domain.com](mailto:email@domain.com) &nbsp;·&nbsp;
 🔗 [LinkedIn](https://linkedin.com) &nbsp;·&nbsp;
