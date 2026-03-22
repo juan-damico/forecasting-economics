@@ -4,10 +4,11 @@
 
 **Applied Econometrics · Time Series Analysis · Macroeconomic Forecasting**
 
-[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtube.com/@ForecastingEconomics)
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg?sub_confirmation=1)
 [![Website](https://img.shields.io/badge/Website-forecastingeconomics.com-1a1a2e?style=flat-square&logo=google-chrome&logoColor=white)](https://www.forecastingeconomics.com)
-[![Medium](https://img.shields.io/badge/Medium-Articles-000000?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@forecastingeconomics)
-[![Udemy](https://img.shields.io/badge/Udemy-Courses-A435F0?style=flat-square&logo=udemy&logoColor=white)](https://www.udemy.com/user/juan-damico)
+[![Medium](https://img.shields.io/badge/Medium-Articles-000000?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@juan-damico)
+[![Udemy](https://img.shields.io/badge/Udemy-Courses-A435F0?style=flat-square&logo=udemy&logoColor=white)](https://www.udemy.com/course/introductory-course-to-dsge-models-in-matlab-dynare/?referralCode=628649706C663C97CDA4)
+[![Store](https://img.shields.io/badge/Store-jdeconomicstore.com-4a7c59?style=flat-square)](https://jdeconomicstore.com)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-lightgrey?style=flat-square)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 </div>
@@ -36,26 +37,26 @@ MA in Economics, University of Waterloo
 
 📧 [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com) &nbsp;·&nbsp;
 🌐 [forecastingeconomics.com](https://www.forecastingeconomics.com) &nbsp;·&nbsp;
+🔗 [All links](https://juandamico.start.page/) &nbsp;·&nbsp;
 📍 Southern Ontario, Canada
 
 <br clear="left">
 
 ---
 
-## Content & Playlists
+## Playlists
 
-| Playlist | Topics Covered |
-|----------|----------------|
-| 📈 **Time Series** | ARIMA, GARCH, VAR, SVAR, VECM, BVAR, Kalman filter, Markov switching |
-| 🔮 **Forecasting** | Out-of-sample evaluation, forecast combination, density forecasting, scenario analysis |
-| 📐 **Econometrics** | OLS, IV, DiD, panel data, quantile regression, logit/probit, Tobit |
-| 🤖 **Machine Learning** | Random forests, XGBoost, LightGBM, neural networks, nowcasting |
-| 💹 **Finance & Quant** | Portfolio optimization, volatility forecasting, Monte Carlo, Black-Scholes, pair trading |
-| ⚙️ **DSGE Models** | RBC, New Keynesian, financial frictions, heterogeneous agents |
-| 🌍 **Applied Macro** | Solow, Ramsey, OLG, recession prediction, SVAR scenario analysis |
-| 💻 **Software** | R, Stata, EViews, Python, MATLAB, Dynare, LaTeX/Overleaf |
+| Playlist | Software | Link |
+|----------|----------|------|
+| 📈 **Time Series Analysis** | R | [Watch →](https://youtube.com/playlist?list=PLsZ8kVwX52ZFmWevy0tZQPP2l0o-SmME3) |
+| 📈 **Time Series Analysis** | Stata | [Watch →](https://youtube.com/playlist?list=PLsZ8kVwX52ZEFZsVViYs60lf7idJuKKUO) |
+| 📈 **Time Series Analysis** | EViews | [Watch →](https://youtube.com/playlist?list=PLsZ8kVwX52ZGXxJ-bqP-WmRBD2HytO4d4) |
+| ⚙️ **DSGE Models** | General | [Watch →](https://youtube.com/playlist?list=PLsZ8kVwX52ZHewGr0jLceiyCazP0GWhoB) |
+| ⚙️ **New Keynesian DSGE** | MATLAB/Dynare | [Watch →](https://youtube.com/playlist?list=PLsZ8kVwX52ZEJa299FbVohCXTQLMACbkv) |
+| 🐍 **Python** | Python | [Watch →](https://youtube.com/playlist?list=PLsZ8kVwX52ZGYHAt8JAkXpGX4UVBZai-2) |
+| 📝 **LaTeX with Overleaf** | LaTeX | [Watch →](https://youtube.com/playlist?list=PLsZ8kVwX52ZGTCs7OsRPzweuqnJSiU76p) |
 
-▶️ [Browse all playlists →](https://youtube.com/@ForecastingEconomics/playlists)
+▶️ [Browse all playlists →](https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg/playlists)
 
 ---
 
@@ -63,9 +64,9 @@ MA in Economics, University of Waterloo
 
 | # | Video | Views |
 |---|-------|-------|
-| 🥇 | [How to Add Bibliography in LaTeX (Overleaf/BibTeX)](https://youtube.com) | 131,599 |
-| 🥈 | [ARIMA Models in EViews — Box Jenkins Method](https://youtube.com) | 110,052 |
-| 🥉 | [VAR Models in EViews — Step by Step](https://youtube.com) | 92,967 |
+| 🥇 | [How to Add Bibliography in LaTeX (Overleaf/BibTeX)](https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg) | 131,599 |
+| 🥈 | [ARIMA Models in EViews — Box Jenkins Method](https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg) | 110,052 |
+| 🥉 | [VAR Models in EViews — Step by Step](https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg) | 92,967 |
 
 ---
 
@@ -85,14 +86,13 @@ MA in Economics, University of Waterloo
 
 ## Get Involved
 
-There are many ways to be part of the Forecasting Economics community:
-
 | | |
 |---|---|
-| ▶️ **Watch & Subscribe** | [Subscribe on YouTube](https://youtube.com/@ForecastingEconomics) and never miss a new episode |
-| ❤️ **Become a Member** | [Join the YouTube channel membership](https://youtube.com/@ForecastingEconomics/membership) and support the project directly |
-| 🎓 **Take a Course** | [Enroll in a premium course on Udemy](https://www.udemy.com/user/juan-damico) for structured, in-depth learning |
-| ✍️ **Read on Medium** | [Follow on Medium](https://medium.com/@forecastingeconomics) for written tutorials and articles |
+| ▶️ **Subscribe** | [Subscribe on YouTube](https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg?sub_confirmation=1) — free tutorials every week |
+| ❤️ **Become a Member** | [Join the channel membership](https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg/membership) and support the project directly |
+| 🎓 **Take a Course** | [DSGE Models in MATLAB/Dynare on Udemy](https://www.udemy.com/course/introductory-course-to-dsge-models-in-matlab-dynare/?referralCode=628649706C663C97CDA4) |
+| 🛒 **Visit the Store** | [jdeconomicstore.com](https://jdeconomicstore.com) — resources, templates, and materials |
+| ✍️ **Read on Medium** | [Follow on Medium](https://medium.com/@juan-damico) for written tutorials and articles |
 | ⭐ **Star this repo** | Help others discover the replication materials |
 | 🔁 **Share** | Share episodes and tutorials with your students, colleagues, and network |
 
@@ -111,7 +111,7 @@ Open to collaborations across academic and professional contexts:
 | 📊 **Market Research** | Economic analysis and quantitative research for industry |
 | 🎓 **Training & Workshops** | Custom econometrics and forecasting workshops for teams or institutions |
 
-📧 [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com)
+📧 [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com) &nbsp;·&nbsp; 🔗 [All links](https://juandamico.start.page/)
 
 ---
 
@@ -119,11 +119,13 @@ Open to collaborations across academic and professional contexts:
 
 <div align="center">
 
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@ForecastingEconomics)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/juan-damico)
-[![Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@forecastingeconomics)
-[![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=udemy&logoColor=white)](https://www.udemy.com/user/juan-damico)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg?sub_confirmation=1)
 [![Website](https://img.shields.io/badge/Website-1a1a2e?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.forecastingeconomics.com)
+[![Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@juan-damico)
+[![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=udemy&logoColor=white)](https://www.udemy.com/course/introductory-course-to-dsge-models-in-matlab-dynare/?referralCode=628649706C663C97CDA4)
+[![Store](https://img.shields.io/badge/Store-4a7c59?style=for-the-badge&logo=shopify&logoColor=white)](https://jdeconomicstore.com)
+[![Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=juan-damico)
+[![All Links](https://img.shields.io/badge/All%20Links-juandamico.start.page-orange?style=for-the-badge)](https://juandamico.start.page/)
 
 </div>
 
