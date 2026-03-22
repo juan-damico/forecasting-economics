@@ -2,9 +2,14 @@
 
 ## Presenter
 
-<p align="center">
-  <img src="presenter/jamel.jpg" width="150">
-</p>
+<table>
+<tr>
+<td width="30%" align="center">
+
+<img src="presenter/jamel.jpg" width="150">
+
+</td>
+<td width="70%">
 
 | Field        | Information |
 |-------------|------------|
@@ -13,7 +18,9 @@
 | Email       | [email@domain.com](mailto:email@domain.com) |
 | LinkedIn    | [Profile](https://linkedin.com) |
 
----
+</td>
+</tr>
+</table>
 
 ## Overview
 
