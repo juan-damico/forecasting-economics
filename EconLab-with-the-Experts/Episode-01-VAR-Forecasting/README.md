@@ -1,10 +1,19 @@
-# EconLab with the Experts
+<div align="center">
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/juan-damico/forecasting-economics/main/assets/EconLab2.png" width="450" alt="EconLab with the Experts"/>
+
+<br/><br/>
+
 ## Episode 01 — VAR Forecasting
 
 ![Language](https://img.shields.io/badge/R-4.3-276DC3?style=flat-square&logo=r&logoColor=white)
 ![Status](https://img.shields.io/badge/status-replication--ready-4a7c59?style=flat-square)
 ![Series](https://img.shields.io/badge/EconLab-Episode%2001-1a1a2e?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-lightgrey?style=flat-square)
+
+</div>
 
 ---
 
@@ -13,7 +22,7 @@
 <img src="presenter/jamel.jpg" width="110" align="left" style="margin-right:16px; margin-bottom:8px;">
 
 **Jamel Saadoui, PhD** · University X  
-*Current Role (i.e., Professor, Researcher, Economist at XX, etc.*  
+*Current Role (i.e., Professor, Researcher, Economist at XX, etc.)*  
 Fields: Applied Macroeconomics · Political Economics · International Economics
 
 📧 [email@domain.com](mailto:email@domain.com) &nbsp;·&nbsp;
@@ -180,4 +189,6 @@ For permissions, licensing inquiries, or any questions on proper use, contact:
 
 ---
 
+<div align="center">
 <sub>EconLab with Experts · Forecasting Economics · 2026</sub>
+</div>
