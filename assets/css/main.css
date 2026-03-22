@@ -421,26 +421,25 @@ code { font-family: var(--mono); font-size: 0.85em; background: var(--bg3); padd
 
 /* ---- FOOTER ---- */
 .site-footer {
-  border-top: 1px solid var(--border); padding: 3rem 0; margin-top: 4rem;
+  border-top: none;
+  padding: 3rem 0;
+  margin-top: 2rem;
+  background: #111114;
 }
-.footer-inner {
-  display: flex; flex-direction: column; gap: 1.5rem;
-}
-.footer-name {
-  font-family: var(--serif); font-size: 1.1rem; color: var(--text); display: block; margin-bottom: 4px;
-}
-.footer-tagline { font-family: var(--mono); font-size: 10px; color: var(--muted); letter-spacing: 0.15em; }
-.footer-nav { display: flex; gap: 1.5rem; flex-wrap: wrap; }
-.footer-nav a {
+.foot-i { display: flex; flex-direction: column; gap: 1.5rem; }
+.foot-brand-name { font-family: var(--serif); font-size: 1.1rem; color: #e8e6e0; display: block; margin-bottom: 3px; }
+.foot-tagline { font-family: var(--mono); font-size: 10px; color: #6b7280; letter-spacing: 0.15em; }
+.foot-nav { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.foot-nav a {
   font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em;
-  color: var(--muted); text-transform: uppercase; transition: color 0.2s;
+  color: #6b7280; text-transform: uppercase; transition: color 0.2s;
 }
-.footer-nav a:hover { color: var(--text); }
-.footer-copy {
-  font-family: var(--mono); font-size: 10px; color: var(--border2);
-  letter-spacing: 0.08em; padding-top: 1.5rem; border-top: 1px solid var(--border);
+.foot-nav a:hover { color: #e8e6e0; }
+.foot-copy {
+  font-family: var(--mono); font-size: 10px; color: rgba(255,255,255,0.18);
+  letter-spacing: 0.08em; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.07);
 }
-.footer-copy a { color: var(--muted); border-bottom: 1px solid var(--border); }
+.foot-copy a { color: #6b7280; border-bottom: 1px solid rgba(255,255,255,0.12); }
 
 /* ---- ANIMATIONS ---- */
 @keyframes fadeUp {
