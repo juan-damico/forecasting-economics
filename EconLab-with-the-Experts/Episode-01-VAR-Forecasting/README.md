@@ -2,7 +2,7 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/juan-damico/forecasting-economics/main/assets/EconLab_Logo2.png" width="320" alt="EconLab with the Experts"/>
+<img src="https://raw.githubusercontent.com/juan-damico/forecasting-economics/main/assets/Logo2.png" width="320" alt="EconLab with the Experts"/>
 
 <br/><br/>
 
