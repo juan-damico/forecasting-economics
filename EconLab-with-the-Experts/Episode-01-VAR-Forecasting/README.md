@@ -10,7 +10,7 @@
 
 ## Presenter
 
-<img src="presenter/jamel.jpg" width="90" align="left" style="margin-right:16px">
+<img src="presenter/jamel.jpg" width="110" align="left" style="margin-right:16px; margin-bottom:8px;">
 
 **Jamel Saadoui, PhD** · University X  
 *Applied Economics · EconLab*  
@@ -188,4 +188,4 @@ For permissions, licensing inquiries, or any questions on proper use, contact:
  
 ---
  
-<sub>EconLab with Experts · Applied Economics Tutorial Series · Forecasting Economics · 2026 </sub>
+<sub>EconLab with the Experts · Forecasting Economics · 2026 </sub>
