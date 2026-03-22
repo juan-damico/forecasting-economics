@@ -1,933 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EconLab with the Experts — Forecasting Economics</title>
-<meta name="description" content="A research-oriented seminar series featuring PhD-level economists presenting hands-on, fully reproducible applications of applied economics.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  :root {
-    --bg: #09090b;
-    --bg2: #111114;
-    --bg3: #18181c;
-    --border: rgba(255,255,255,0.07);
-    --border2: rgba(255,255,255,0.12);
-    --text: #e8e6e0;
-    --muted: #6b7280;
-    --muted2: #9ca3af;
-    --accent: #c8a84b;
-    --accent2: #e8c96a;
-    --green: #4a7c59;
-    --green2: #5a9c6e;
-    --red: #cc3333;
-    --mono: 'DM Mono', monospace;
-    --serif: 'Playfair Display', serif;
-    --sans: 'DM Sans', sans-serif;
-  }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--sans);
-    font-size: 15px;
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  /* NAV */
-  nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: rgba(9,9,11,0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 56px;
-  }
-
-  .nav-brand {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    color: var(--accent);
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-  }
-
-  .nav-links a {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    color: var(--muted);
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: color 0.2s;
-  }
-
-  .nav-links a:hover { color: var(--text); }
-
-  .nav-cta {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    color: var(--bg);
-    background: var(--accent);
-    padding: 7px 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: background 0.2s;
-  }
-
-  .nav-cta:hover { background: var(--accent2); }
-
-  /* HERO */
-  .hero {
-    min-height: 92vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 6rem 2rem 4rem;
-    max-width: 1100px;
-    margin: 0 auto;
-    position: relative;
-  }
-
-  .hero-label {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.25em;
-    color: var(--green2);
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .hero-label::before {
-    content: '';
-    width: 24px;
-    height: 1px;
-    background: var(--green2);
-  }
-
-  .hero h1 {
-    font-family: var(--serif);
-    font-size: clamp(2.8rem, 6vw, 5.5rem);
-    font-weight: 700;
-    line-height: 1.05;
-    letter-spacing: -0.02em;
-    color: var(--text);
-    margin-bottom: 1.5rem;
-    max-width: 800px;
-  }
-
-  .hero h1 em {
-    font-style: italic;
-    color: var(--accent);
-  }
-
-  .hero-sub {
-    font-size: 17px;
-    color: var(--muted2);
-    max-width: 560px;
-    line-height: 1.7;
-    margin-bottom: 2.5rem;
-    font-weight: 300;
-  }
-
-  .hero-actions {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .btn-primary {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--bg);
-    background: var(--accent);
-    padding: 13px 28px;
-    text-decoration: none;
-    transition: background 0.2s;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .btn-primary:hover { background: var(--accent2); }
-
-  .btn-secondary {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--muted2);
-    background: transparent;
-    border: 1px solid var(--border2);
-    padding: 13px 28px;
-    text-decoration: none;
-    transition: all 0.2s;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .btn-secondary:hover { color: var(--text); border-color: rgba(255,255,255,0.25); }
-
-  .hero-stats {
-    display: flex;
-    gap: 3rem;
-    margin-top: 5rem;
-    padding-top: 2.5rem;
-    border-top: 1px solid var(--border);
-  }
-
-  .stat-item {}
-
-  .stat-num {
-    font-family: var(--mono);
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: var(--text);
-    letter-spacing: -0.02em;
-  }
-
-  .stat-label {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.18em;
-    color: var(--muted);
-    text-transform: uppercase;
-    margin-top: 2px;
-  }
-
-  /* SECTION */
-  section {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 5rem 2rem;
-  }
-
-  .section-header {
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-    margin-bottom: 3rem;
-  }
-
-  .section-tag {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    color: var(--accent);
-    text-transform: uppercase;
-  }
-
-  .section-line {
-    flex: 1;
-    height: 1px;
-    background: var(--border);
-  }
-
-  h2 {
-    font-family: var(--serif);
-    font-size: clamp(1.8rem, 3vw, 2.6rem);
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    color: var(--text);
-    margin-bottom: 1rem;
-  }
-
-  .section-desc {
-    color: var(--muted2);
-    max-width: 540px;
-    font-weight: 300;
-    margin-bottom: 3rem;
-  }
-
-  /* EPISODES */
-  .episode-card {
-    display: grid;
-    grid-template-columns: 80px 1fr auto;
-    gap: 2rem;
-    align-items: start;
-    padding: 2rem 0;
-    border-bottom: 1px solid var(--border);
-    text-decoration: none;
-    transition: all 0.2s;
-  }
-
-  .episode-card:first-child { border-top: 1px solid var(--border); }
-  .episode-card:hover { padding-left: 8px; }
-
-  .ep-num {
-    font-family: var(--mono);
-    font-size: 2rem;
-    font-weight: 300;
-    color: var(--border2);
-    letter-spacing: -0.03em;
-    line-height: 1;
-    padding-top: 4px;
-    transition: color 0.2s;
-  }
-
-  .episode-card:hover .ep-num { color: var(--accent); }
-
-  .ep-content {}
-
-  .ep-tag {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.15em;
-    color: var(--green2);
-    text-transform: uppercase;
-    margin-bottom: 6px;
-  }
-
-  .ep-title {
-    font-family: var(--serif);
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: var(--text);
-    margin-bottom: 6px;
-    line-height: 1.3;
-  }
-
-  .ep-presenter {
-    font-size: 13px;
-    color: var(--muted);
-  }
-
-  .ep-presenter strong { color: var(--muted2); font-weight: 500; }
-
-  .ep-links {
-    display: flex;
-    gap: 8px;
-    padding-top: 4px;
-  }
-
-  .ep-link {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-    border: 1px solid var(--border);
-    padding: 6px 12px;
-    text-decoration: none;
-    transition: all 0.2s;
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-  }
-
-  .ep-link:hover { color: var(--text); border-color: var(--border2); }
-  .ep-link.video:hover { color: var(--red); border-color: var(--red); }
-
-  .ep-soon {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.15em;
-    color: var(--border2);
-    text-transform: uppercase;
-    border: 1px solid var(--border);
-    padding: 6px 14px;
-    align-self: center;
-  }
-
-  /* TOPICS GRID */
-  .topics-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1px;
-    background: var(--border);
-    border: 1px solid var(--border);
-  }
-
-  .topic-cell {
-    background: var(--bg);
-    padding: 1.5rem;
-    transition: background 0.2s;
-  }
-
-  .topic-cell:hover { background: var(--bg3); }
-
-  .topic-icon {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-
-  .topic-name {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    color: var(--accent);
-    text-transform: uppercase;
-    margin-bottom: 8px;
-  }
-
-  .topic-methods {
-    font-size: 12px;
-    color: var(--muted);
-    line-height: 1.6;
-  }
-
-  /* WHAT'S INCLUDED */
-  .includes-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1px;
-    background: var(--border);
-    border: 1px solid var(--border);
-  }
-
-  .include-cell {
-    background: var(--bg);
-    padding: 1.5rem 1.2rem;
-    text-align: center;
-  }
-
-  .include-folder {
-    font-family: var(--mono);
-    font-size: 12px;
-    color: var(--accent);
-    margin-bottom: 6px;
-  }
-
-  .include-desc {
-    font-size: 12px;
-    color: var(--muted);
-    line-height: 1.5;
-  }
-
-  /* CALL FOR PRESENTERS */
-  .cfp-block {
-    border: 1px solid var(--border2);
-    padding: 3rem;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .cfp-block::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 3px;
-    height: 100%;
-    background: var(--accent);
-  }
-
-  .cfp-label {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.22em;
-    color: var(--accent);
-    text-transform: uppercase;
-    margin-bottom: 1.2rem;
-  }
-
-  .cfp-block h2 {
-    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
-    margin-bottom: 1rem;
-  }
-
-  .cfp-block p {
-    color: var(--muted2);
-    max-width: 600px;
-    font-weight: 300;
-    margin-bottom: 2rem;
-    font-size: 15px;
-  }
-
-  .cfp-email {
-    font-family: var(--mono);
-    font-size: 13px;
-    color: var(--accent);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(200,168,75,0.3);
-    padding-bottom: 1px;
-    transition: border-color 0.2s;
-  }
-
-  .cfp-email:hover { border-color: var(--accent); }
-
-  /* ABOUT / CREATOR */
-  .creator-block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-  }
-
-  .creator-text {}
-
-  .creator-text p {
-    color: var(--muted2);
-    font-weight: 300;
-    margin-bottom: 1.2rem;
-    font-size: 15px;
-  }
-
-  .creator-meta {
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border);
-  }
-
-  .meta-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 6px 0;
-    border-bottom: 1px solid var(--border);
-    font-size: 13px;
-  }
-
-  .meta-key {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.12em;
-    color: var(--muted);
-    text-transform: uppercase;
-  }
-
-  .meta-val { color: var(--muted2); }
-
-  .channel-card {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    padding: 2rem;
-  }
-
-  .channel-label {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    color: var(--muted);
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-  }
-
-  .channel-name {
-    font-family: var(--serif);
-    font-size: 1.4rem;
-    color: var(--text);
-    margin-bottom: 0.5rem;
-  }
-
-  .channel-desc {
-    font-size: 13px;
-    color: var(--muted);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    font-weight: 300;
-  }
-
-  .channel-links {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .channel-link {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    color: var(--muted2);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 0;
-    border-bottom: 1px solid var(--border);
-    transition: color 0.2s;
-  }
-
-  .channel-link:hover { color: var(--accent); }
-
-  .channel-link-arrow { color: var(--border2); font-size: 14px; }
-  .channel-link:hover .channel-link-arrow { color: var(--accent); }
-
-  /* FOOTER */
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 3rem 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-
-  .footer-brand {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    color: var(--muted);
-    text-transform: uppercase;
-  }
-
-  .footer-brand span { color: var(--accent); }
-
-  .footer-links {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-  }
-
-  .footer-links a {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.12em;
-    color: var(--muted);
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: color 0.2s;
-  }
-
-  .footer-links a:hover { color: var(--text); }
-
-  .footer-copy {
-    font-family: var(--mono);
-    font-size: 10px;
-    color: var(--border2);
-    letter-spacing: 0.1em;
-    width: 100%;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border);
-  }
-
-  /* ANIMATIONS */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .fade-up {
-    animation: fadeUp 0.7s ease forwards;
-    opacity: 0;
-  }
-
-  .fade-up:nth-child(1) { animation-delay: 0.1s; }
-  .fade-up:nth-child(2) { animation-delay: 0.25s; }
-  .fade-up:nth-child(3) { animation-delay: 0.4s; }
-  .fade-up:nth-child(4) { animation-delay: 0.55s; }
-
-  /* TICKER */
-  .ticker {
-    background: var(--bg2);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    padding: 10px 0;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  .ticker-inner {
-    display: inline-block;
-    animation: ticker 30s linear infinite;
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    color: var(--muted);
-    text-transform: uppercase;
-  }
-
-  @keyframes ticker {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
-
-  /* RESPONSIVE */
-  @media (max-width: 768px) {
-    .nav-links { display: none; }
-    .hero h1 { font-size: 2.4rem; }
-    .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
-    .episode-card { grid-template-columns: 50px 1fr; }
-    .ep-links { display: none; }
-    .includes-grid { grid-template-columns: repeat(2, 1fr); }
-    .creator-block { grid-template-columns: 1fr; gap: 2rem; }
-    .cfp-block { padding: 2rem; }
-    footer { flex-direction: column; align-items: flex-start; }
-  }
-</style>
-</head>
-<body>
-
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-brand">Forecasting Economics</a>
-  <ul class="nav-links">
-    <li><a href="#episodes">Episodes</a></li>
-    <li><a href="#topics">Topics</a></li>
-    <li><a href="#present">Present</a></li>
-    <li><a href="#about">About</a></li>
-  </ul>
-  <a href="https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg?sub_confirmation=1" target="_blank" class="nav-cta">Subscribe ↗</a>
-</nav>
+---
+layout: default
+title: Home
+description: Applied econometrics, time series analysis, and macroeconomic forecasting. Free tutorials, courses, and replication materials.
+---
 
 <!-- TICKER -->
 <div class="ticker">
-  <span class="ticker-inner">
-    VAR · ARIMA · DSGE · Kalman Filter · GARCH · Cointegration · Instrumental Variables · DiD · Random Forests · Nowcasting · SVAR · New Keynesian · Monte Carlo · Synthetic Control · XGBoost · Panel Data · VECM · Quantile Regression · BVAR · State Space &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    VAR · ARIMA · DSGE · Kalman Filter · GARCH · Cointegration · Instrumental Variables · DiD · Random Forests · Nowcasting · SVAR · New Keynesian · Monte Carlo · Synthetic Control · XGBoost · Panel Data · VECM · Quantile Regression · BVAR · State Space &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span>
+  <div class="ticker-inner">
+    VAR · ARIMA · DSGE · Kalman Filter · GARCH · Cointegration · Instrumental Variables · DiD · Random Forests · Nowcasting · SVAR · New Keynesian · Monte Carlo · Synthetic Control · XGBoost · Panel Data · VECM · Quantile Regression · BVAR · State Space &nbsp;&nbsp;&nbsp;
+    VAR · ARIMA · DSGE · Kalman Filter · GARCH · Cointegration · Instrumental Variables · DiD · Random Forests · Nowcasting · SVAR · New Keynesian · Monte Carlo · Synthetic Control · XGBoost · Panel Data · VECM · Quantile Regression · BVAR · State Space &nbsp;&nbsp;&nbsp;
+  </div>
 </div>
 
 <!-- HERO -->
-<div class="hero">
-  <div class="hero-label fade-up">EconLab with the Experts</div>
-  <h1 class="fade-up">Where Theory<br>Meets <em>Implementation</em></h1>
-  <p class="hero-sub fade-up">Expert-led seminars featuring PhD economists and practitioners presenting fully reproducible applications of applied research — from raw data to replicable results.</p>
-  <div class="hero-actions fade-up">
-    <a href="#episodes" class="btn-primary">Explore Episodes ↓</a>
-    <a href="https://www.forecastingeconomics.com" target="_blank" class="btn-secondary">Forecasting Economics ↗</a>
-  </div>
-  <div class="hero-stats">
-    <div class="stat-item">
-      <div class="stat-num">16.5k+</div>
-      <div class="stat-label">Subscribers</div>
+<section class="hero">
+  <div class="container">
+    <div class="hero-label">Forecasting Economics</div>
+    <h1 class="hero-title">Applied Economics.<br><em>Made Replicable.</em></h1>
+    <p class="hero-sub">Free tutorials, replication code, and expert-led seminars covering the full frontier of applied econometrics — from time series to machine learning.</p>
+    <div class="hero-actions">
+      <a href="{{ '/econlab/' | relative_url }}" class="btn-primary">Explore EconLab ↓</a>
+      <a href="{{ site.social.youtube_subscribe }}" target="_blank" class="btn-secondary">Subscribe on YouTube ↗</a>
     </div>
-    <div class="stat-item">
-      <div class="stat-num">36k+</div>
-      <div class="stat-label">Monthly Views</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">100+</div>
-      <div class="stat-label">Countries</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">Open</div>
-      <div class="stat-label">Access</div>
-    </div>
-  </div>
-</div>
-
-<!-- EPISODES -->
-<section id="episodes">
-  <div class="section-header">
-    <span class="section-tag">Episodes</span>
-    <div class="section-line"></div>
-  </div>
-  <h2>Episode Index</h2>
-  <p class="section-desc">Each episode ships as a self-contained GitHub repository with everything needed to replicate the analysis from scratch.</p>
-
-  <a href="https://github.com/juan-damico/forecasting-economics/tree/main/EconLab-with-the-Experts/Episode-01-VAR-Forecasting" target="_blank" class="episode-card">
-    <div class="ep-num">01</div>
-    <div class="ep-content">
-      <div class="ep-tag">Time Series · R</div>
-      <div class="ep-title">VAR Forecasting</div>
-      <div class="ep-presenter">Presented by <strong>Jamel Saadoui, PhD</strong> · University X</div>
-    </div>
-    <div class="ep-links">
-      <a href="https://youtube.com" target="_blank" class="ep-link video" onclick="event.stopPropagation()">▶ Video</a>
-      <a href="https://github.com/juan-damico/forecasting-economics/tree/main/EconLab-with-the-Experts/Episode-01-VAR-Forecasting" target="_blank" class="ep-link" onclick="event.stopPropagation()">⌥ Code</a>
-    </div>
-  </a>
-
-  <div class="episode-card" style="cursor:default; opacity:0.4;">
-    <div class="ep-num">02</div>
-    <div class="ep-content">
-      <div class="ep-tag">Coming soon</div>
-      <div class="ep-title">To be announced</div>
-      <div class="ep-presenter">New episodes added regularly</div>
-    </div>
-    <div class="ep-soon">Upcoming</div>
-  </div>
-
-  <div class="episode-card" style="cursor:default; opacity:0.4; border-bottom: none;">
-    <div class="ep-num">03</div>
-    <div class="ep-content">
-      <div class="ep-tag">Coming soon</div>
-      <div class="ep-title">To be announced</div>
-      <div class="ep-presenter">New episodes added regularly</div>
-    </div>
-    <div class="ep-soon">Upcoming</div>
-  </div>
-</section>
-
-<!-- INCLUDES -->
-<section style="padding-top: 0;">
-  <div class="section-header">
-    <span class="section-tag">Repository structure</span>
-    <div class="section-line"></div>
-  </div>
-  <div class="includes-grid">
-    <div class="include-cell">
-      <div class="include-folder">code/</div>
-      <div class="include-desc">Fully replicable scripts</div>
-    </div>
-    <div class="include-cell">
-      <div class="include-folder">data/</div>
-      <div class="include-desc">Dataset used in tutorial</div>
-    </div>
-    <div class="include-cell">
-      <div class="include-folder">figures/</div>
-      <div class="include-desc">All output figures & results</div>
-    </div>
-    <div class="include-cell">
-      <div class="include-folder">slides/</div>
-      <div class="include-desc">Presentation slides</div>
-    </div>
-    <div class="include-cell">
-      <div class="include-folder">paper/</div>
-      <div class="include-desc">References & further reading</div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">16.5k+</span><span class="stat-label">Subscribers</span></div>
+      <div class="stat"><span class="stat-num">36k+</span><span class="stat-label">Monthly Views</span></div>
+      <div class="stat"><span class="stat-num">100+</span><span class="stat-label">Countries</span></div>
+      <div class="stat"><span class="stat-num">Free</span><span class="stat-label">Open Access</span></div>
     </div>
   </div>
 </section>
 
-<!-- TOPICS -->
-<section id="topics">
-  <div class="section-header">
-    <span class="section-tag">Topics covered</span>
-    <div class="section-line"></div>
-  </div>
-  <h2>Methods & Areas</h2>
-  <p class="section-desc">The series spans the full frontier of applied economics, from classical econometrics to modern machine learning.</p>
-  <div class="topics-grid">
-    <div class="topic-cell">
-      <div class="topic-name">Time Series</div>
-      <div class="topic-methods">VAR, SVAR, ARIMA, state-space models, cointegration, Kalman filter, Markov switching</div>
+<!-- ECONLAB FEATURE -->
+<section class="feature-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Featured Series</span>
+      <div class="section-line"></div>
     </div>
-    <div class="topic-cell">
-      <div class="topic-name">Forecasting</div>
-      <div class="topic-methods">Out-of-sample evaluation, forecast combination, density forecasting, scenario analysis</div>
-    </div>
-    <div class="topic-cell">
-      <div class="topic-name">Econometrics</div>
-      <div class="topic-methods">DiD, IV, RDD, synthetic control, panel data, quantile regression, logit/probit</div>
-    </div>
-    <div class="topic-cell">
-      <div class="topic-name">Macro & DSGE</div>
-      <div class="topic-methods">DSGE, RBC, New Keynesian, financial frictions, factor models, asset pricing</div>
-    </div>
-    <div class="topic-cell">
-      <div class="topic-name">ML in Economics</div>
-      <div class="topic-methods">LASSO, random forests, gradient boosting, nowcasting, neural networks, VAE</div>
-    </div>
-    <div class="topic-cell">
-      <div class="topic-name">Finance & Quant</div>
-      <div class="topic-methods">Portfolio optimization, volatility modeling, Monte Carlo, stress testing, pair trading</div>
-    </div>
-  </div>
-</section>
-
-<!-- CALL FOR PRESENTERS -->
-<section id="present">
-  <div class="cfp-block">
-    <div class="cfp-label">Open call</div>
-    <h2>Present Your Research</h2>
-    <p>EconLab is actively seeking PhD economists, academic researchers, faculty, and practitioners with a strong applied focus to present in upcoming episodes. Share your work with a global community of economists, students, and enthusiasts.</p>
-    <p>Reach out and you will receive a full package with all the details, guidelines, and templates needed to prepare your session.</p>
-    <a href="mailto:juan.damico@forecastingeconomics.com" class="cfp-email">juan.damico@forecastingeconomics.com</a>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-header">
-    <span class="section-tag">About</span>
-    <div class="section-line"></div>
-  </div>
-  <div class="creator-block">
-    <div class="creator-text">
-      <h2>Forecasting Economics</h2>
-      <p>Founded in 2020 during the COVID-19 pandemic, Forecasting Economics has grown into one of the leading YouTube channels for applied econometrics and time series analysis — reaching a global community of economists, researchers, and practitioners.</p>
-      <p>The mission is straightforward: make rigorous applied economics accessible, practical, and replicable — for learners at every level, anywhere in the world.</p>
-      <div class="creator-meta">
-        <div class="meta-row">
-          <span class="meta-key">Creator</span>
-          <span class="meta-val">Juan Nicolás D'Amico</span>
-        </div>
-        <div class="meta-row">
-          <span class="meta-key">Role</span>
-          <span class="meta-val">Economist · Statistics Canada</span>
-        </div>
-        <div class="meta-row">
-          <span class="meta-key">Education</span>
-          <span class="meta-val">MA Economics, University of Waterloo</span>
-        </div>
-        <div class="meta-row">
-          <span class="meta-key">Location</span>
-          <span class="meta-val">Southern Ontario, Canada</span>
-        </div>
-        <div class="meta-row" style="border:none;">
-          <span class="meta-key">Contact</span>
-          <a href="mailto:juan.damico@forecastingeconomics.com" class="cfp-email" style="font-size:12px;">juan.damico@forecastingeconomics.com</a>
-        </div>
+    <div class="feature-block">
+      <div class="feature-text">
+        <h2>EconLab with the Experts</h2>
+        <p>A research-oriented seminar series featuring PhD economists and practitioners presenting <strong>hands-on, fully reproducible applications</strong> of their work. Every episode comes with code, data, slides, and references — all open access.</p>
+        <a href="{{ '/econlab/' | relative_url }}" class="btn-primary">View All Episodes →</a>
       </div>
-    </div>
-    <div class="channel-card">
-      <div class="channel-label">Engage with the channel</div>
-      <div class="channel-name">Forecasting Economics</div>
-      <div class="channel-desc">Applied econometrics, time series analysis, and macroeconomic forecasting. Free tutorials, courses, and replication materials.</div>
-      <div class="channel-links">
-        <a href="https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg?sub_confirmation=1" target="_blank" class="channel-link">
-          <span>▶ Subscribe on YouTube</span>
-          <span class="channel-link-arrow">↗</span>
+      <div class="feature-episodes">
+        {% assign episodes = site.episodes | sort: 'episode_number' %}
+        {% for ep in episodes limit:3 %}
+        <a href="{{ ep.url | relative_url }}" class="ep-mini-card">
+          <span class="ep-mini-num">{{ ep.episode_number | prepend: '0' | slice: -2, 2 }}</span>
+          <div>
+            <div class="ep-mini-title">{{ ep.title }}</div>
+            <div class="ep-mini-presenter">{{ ep.presenter_name }}</div>
+          </div>
+          <span class="ep-mini-arrow">→</span>
         </a>
-        <a href="https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg/membership" target="_blank" class="channel-link">
-          <span>❤ Become a Member</span>
-          <span class="channel-link-arrow">↗</span>
-        </a>
-        <a href="https://www.udemy.com/course/introductory-course-to-dsge-models-in-matlab-dynare/?referralCode=628649706C663C97CDA4" target="_blank" class="channel-link">
-          <span>🎓 Udemy Course — DSGE in MATLAB/Dynare</span>
-          <span class="channel-link-arrow">↗</span>
-        </a>
-        <a href="https://jdeconomicstore.com" target="_blank" class="channel-link">
-          <span>🛒 Visit the Store</span>
-          <span class="channel-link-arrow">↗</span>
-        </a>
-        <a href="https://www.forecastingeconomics.com" target="_blank" class="channel-link">
-          <span>🌐 Website</span>
-          <span class="channel-link-arrow">↗</span>
-        </a>
-        <a href="https://juandamico.start.page/" target="_blank" class="channel-link">
-          <span>🔗 All Links</span>
-          <span class="channel-link-arrow">↗</span>
-        </a>
+        {% endfor %}
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-brand">
-    <span>EconLab</span> with the Experts · Forecasting Economics
+<!-- PLAYLISTS -->
+<section class="playlists-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Content & Playlists</span>
+      <div class="section-line"></div>
+    </div>
+    <h2>What You'll Learn</h2>
+    <div class="playlists-grid">
+      <a href="https://youtube.com/playlist?list=PLsZ8kVwX52ZFmWevy0tZQPP2l0o-SmME3" target="_blank" class="playlist-card">
+        <div class="playlist-icon">📈</div>
+        <div class="playlist-name">Time Series in R</div>
+        <div class="playlist-desc">VAR, ARIMA, GARCH, state-space models</div>
+      </a>
+      <a href="https://youtube.com/playlist?list=PLsZ8kVwX52ZEFZsVViYs60lf7idJuKKUO" target="_blank" class="playlist-card">
+        <div class="playlist-icon">📊</div>
+        <div class="playlist-name">Time Series in Stata</div>
+        <div class="playlist-desc">Applied time series using Stata</div>
+      </a>
+      <a href="https://youtube.com/playlist?list=PLsZ8kVwX52ZGXxJ-bqP-WmRBD2HytO4d4" target="_blank" class="playlist-card">
+        <div class="playlist-icon">🔮</div>
+        <div class="playlist-name">Forecasting in EViews</div>
+        <div class="playlist-desc">Applied forecasting with EViews</div>
+      </a>
+      <a href="https://youtube.com/playlist?list=PLsZ8kVwX52ZHewGr0jLceiyCazP0GWhoB" target="_blank" class="playlist-card">
+        <div class="playlist-icon">⚙️</div>
+        <div class="playlist-name">DSGE Models</div>
+        <div class="playlist-desc">RBC, New Keynesian, financial frictions</div>
+      </a>
+      <a href="https://youtube.com/playlist?list=PLsZ8kVwX52ZEJa299FbVohCXTQLMACbkv" target="_blank" class="playlist-card">
+        <div class="playlist-icon">🔧</div>
+        <div class="playlist-name">New Keynesian DSGE</div>
+        <div class="playlist-desc">MATLAB/Dynare implementation</div>
+      </a>
+      <a href="https://youtube.com/playlist?list=PLsZ8kVwX52ZGYHAt8JAkXpGX4UVBZai-2" target="_blank" class="playlist-card">
+        <div class="playlist-icon">🐍</div>
+        <div class="playlist-name">Python for Economics</div>
+        <div class="playlist-desc">Applied Python for economists</div>
+      </a>
+      <a href="https://youtube.com/playlist?list=PLsZ8kVwX52ZGTCs7OsRPzweuqnJSiU76p" target="_blank" class="playlist-card">
+        <div class="playlist-icon">📝</div>
+        <div class="playlist-name">LaTeX with Overleaf</div>
+        <div class="playlist-desc">Academic writing and bibliography</div>
+      </a>
+    </div>
   </div>
-  <ul class="footer-links">
-    <li><a href="https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg" target="_blank">YouTube</a></li>
-    <li><a href="https://www.forecastingeconomics.com" target="_blank">Website</a></li>
-    <li><a href="https://juandamico.start.page/" target="_blank">All Links</a></li>
-    <li><a href="mailto:juan.damico@forecastingeconomics.com">Contact</a></li>
-    <li><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></li>
-  </ul>
-  <div class="footer-copy">© 2026 Forecasting Economics — Juan Nicolás D'Amico. All rights reserved. Content may not be reproduced for commercial purposes without proper citation.</div>
-</footer>
+</section>
 
-</body>
-</html>
+<!-- ENGAGE -->
+<section class="engage-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Get Involved</span>
+      <div class="section-line"></div>
+    </div>
+    <h2>Join the Community</h2>
+    <div class="engage-grid">
+      <a href="{{ site.social.youtube_subscribe }}" target="_blank" class="engage-card">
+        <div class="engage-icon">▶</div>
+        <div class="engage-title">Subscribe</div>
+        <div class="engage-desc">Free tutorials every week on YouTube</div>
+      </a>
+      <a href="{{ site.social.youtube }}/membership" target="_blank" class="engage-card">
+        <div class="engage-icon">❤</div>
+        <div class="engage-title">Become a Member</div>
+        <div class="engage-desc">Support the channel directly</div>
+      </a>
+      <a href="{{ site.social.udemy }}" target="_blank" class="engage-card">
+        <div class="engage-icon">🎓</div>
+        <div class="engage-title">Take a Course</div>
+        <div class="engage-desc">DSGE Models in MATLAB/Dynare</div>
+      </a>
+      <a href="{{ site.social.store }}" target="_blank" class="engage-card">
+        <div class="engage-icon">🛒</div>
+        <div class="engage-title">Visit the Store</div>
+        <div class="engage-desc">Resources, templates, and materials</div>
+      </a>
+      <a href="{{ site.social.medium }}" target="_blank" class="engage-card">
+        <div class="engage-icon">✍</div>
+        <div class="engage-title">Read on Medium</div>
+        <div class="engage-desc">Written tutorials and articles</div>
+      </a>
+      <a href="mailto:{{ site.author.email }}" class="engage-card">
+        <div class="engage-icon">📧</div>
+        <div class="engage-title">Work With Me</div>
+        <div class="engage-desc">Consulting, co-authorship, training</div>
+      </a>
+    </div>
+  </div>
+</section>

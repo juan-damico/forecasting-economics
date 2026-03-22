@@ -1,0 +1,39 @@
+title: Forecasting Economics
+description: Applied econometrics, time series analysis, and macroeconomic forecasting.
+baseurl: "/forecasting-economics"
+url: "https://juan-damico.github.io"
+
+author:
+  name: Juan Nicolás D'Amico
+  email: juan.damico@forecastingeconomics.com
+  website: https://www.forecastingeconomics.com
+
+social:
+  youtube: https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg
+  youtube_subscribe: https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg?sub_confirmation=1
+  linkedin: https://www.linkedin.com/in/juan-damico
+  medium: https://medium.com/@juan-damico
+  udemy: https://www.udemy.com/course/introductory-course-to-dsge-models-in-matlab-dynare/?referralCode=628649706C663C97CDA4
+  store: https://jdeconomicstore.com
+  alllinks: https://juandamico.start.page/
+  scholar: https://scholar.google.com
+
+collections:
+  episodes:
+    output: true
+    permalink: /econlab/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: episodes
+    values:
+      layout: episode
+
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-seo-tag
+
+kramdown:
+  math_engine: mathjax
