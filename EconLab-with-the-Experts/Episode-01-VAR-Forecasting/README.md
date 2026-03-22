@@ -21,8 +21,8 @@
 
 <img src="presenter/jamel.jpg" width="160" align="left" style="margin-right:16px; margin-bottom:8px;">
 
-**Jamel Saadoui, PhD** · University X  
-*Current Role (i.e., Professor, Researcher, Economist at XX, etc.)*  
+**Jamel Saadoui, PhD** · University of Paris 8 
+*Current Role: Full time Professor of Economics *  
 Fields: Applied Macroeconomics · Political Economics · International Economics
 
 📧 [email@domain.com](mailto:email@domain.com) &nbsp;·&nbsp;
