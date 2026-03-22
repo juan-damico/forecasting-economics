@@ -1,0 +1,87 @@
+---
+layout: default
+title: EconLab with the Experts
+description: A research-oriented seminar series featuring PhD economists and practitioners presenting fully reproducible applications of applied economics.
+permalink: /econlab/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <div class="hero-label">Forecasting Economics</div>
+    <h1>EconLab with the Experts</h1>
+    <p class="page-hero-desc">Expert-led seminars where leading economists present <strong>hands-on, fully reproducible applications</strong> of applied research — from raw data to replicable results.</p>
+    <div class="hero-actions">
+      <a href="{{ site.social.youtube_subscribe }}" target="_blank" class="btn-primary">Subscribe ↗</a>
+      <a href="mailto:{{ site.author.email }}" class="btn-secondary">Present Your Research →</a>
+    </div>
+  </div>
+</section>
+
+<!-- EPISODES -->
+<section class="episodes-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Episodes</span>
+      <div class="section-line"></div>
+    </div>
+
+    {% assign episodes = site.episodes | sort: 'episode_number' %}
+    {% if episodes.size > 0 %}
+      {% for ep in episodes %}
+      <a href="{{ ep.url | relative_url }}" class="episode-row">
+        <div class="ep-num">{{ ep.episode_number | prepend: '00' | slice: -2, 2 }}</div>
+        <div class="ep-info">
+          <div class="ep-tags">
+            <span class="badge badge-lang">{{ ep.language }}</span>
+            <span class="badge badge-topic">{{ ep.topic_tag }}</span>
+          </div>
+          <div class="ep-title-row">{{ ep.title }}</div>
+          <div class="ep-presenter-row">
+            {{ ep.presenter_name }} · {{ ep.presenter_affiliation }}
+          </div>
+        </div>
+        <div class="ep-actions">
+          {% if ep.video_url %}
+          <a href="{{ ep.video_url }}" target="_blank" class="ep-btn ep-btn-red" onclick="event.stopPropagation()">▶ Video</a>
+          {% endif %}
+          <a href="{{ ep.repo_url }}" target="_blank" class="ep-btn" onclick="event.stopPropagation()">⌥ Code</a>
+        </div>
+        <div class="ep-arrow">→</div>
+      </a>
+      {% endfor %}
+    {% else %}
+      <p class="coming-soon-note">Episodes coming soon. <a href="{{ site.social.youtube_subscribe }}" target="_blank">Subscribe to stay updated ↗</a></p>
+    {% endif %}
+  </div>
+</section>
+
+<!-- TOPICS -->
+<section class="topics-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Topics Covered</span>
+      <div class="section-line"></div>
+    </div>
+    <div class="topics-grid">
+      <div class="topic-cell"><div class="topic-name">Time Series</div><div class="topic-methods">VAR, SVAR, ARIMA, state-space, cointegration, Kalman filter, Markov switching</div></div>
+      <div class="topic-cell"><div class="topic-name">Forecasting</div><div class="topic-methods">Out-of-sample evaluation, forecast combination, density forecasting, scenario analysis</div></div>
+      <div class="topic-cell"><div class="topic-name">Econometrics</div><div class="topic-methods">DiD, IV, RDD, synthetic control, panel data, quantile regression</div></div>
+      <div class="topic-cell"><div class="topic-name">Macro & DSGE</div><div class="topic-methods">DSGE, RBC, New Keynesian, financial frictions, factor models</div></div>
+      <div class="topic-cell"><div class="topic-name">ML in Economics</div><div class="topic-methods">LASSO, random forests, gradient boosting, nowcasting, neural networks</div></div>
+      <div class="topic-cell"><div class="topic-name">Finance & Quant</div><div class="topic-methods">Portfolio optimization, volatility modeling, Monte Carlo, stress testing</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CALL FOR PRESENTERS -->
+<section class="cfp-section">
+  <div class="container">
+    <div class="cfp-block">
+      <div class="cfp-label">Open Call</div>
+      <h2>Present Your Research</h2>
+      <p>EconLab is actively seeking PhD economists, researchers, faculty, and practitioners with a strong applied focus who want to share their work with a global community of economists, students, and enthusiasts.</p>
+      <p>Reach out and you will receive a full package with all the details, guidelines, and templates needed to prepare your session.</p>
+      <a href="mailto:{{ site.author.email }}" class="btn-primary">Get in Touch ↗</a>
+    </div>
+  </div>
+</section>
