@@ -4,10 +4,10 @@
 
 **Applied econometrics · Time series analysis · Forecasting**
 
-![Series](https://img.shields.io/badge/EconLab-with%20the%20Experts-1a1a2e?style=flat-square)
-![Status](https://img.shields.io/badge/status-active-4a7c59?style=flat-square)
-![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-lightgrey?style=flat-square)
-![YouTube](https://img.shields.io/badge/YouTube-Forecasting%20Economics-FF0000?style=flat-square&logo=youtube&logoColor=white)
+[![Series](https://img.shields.io/badge/EconLab-with%20the%20Experts-1a1a2e?style=flat-square)](https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg)
+[![Status](https://img.shields.io/badge/status-active-4a7c59?style=flat-square)]()
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-lightgrey?style=flat-square)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![YouTube](https://img.shields.io/badge/YouTube-Forecasting%20Economics-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg?sub_confirmation=1)
 
 </div>
 
@@ -15,9 +15,11 @@
 
 ## EconLab with the Experts
 
-**EconLab** is a webinar series where leading economists and practitioners share hands-on implementations of applied research methods. Each episode features an expert walking through a real empirical problem — from data to code to results.
+**EconLab** is a research-oriented seminar series within Forecasting Economics, featuring PhD-level economists and subject-matter experts presenting **hands-on, fully reproducible applications** of their work.
 
-The series is designed for researchers, PhD students, and professionals who want to go beyond theory and engage with the tools and methods used at the frontier of applied economics.
+Each episode features an expert walking through a real empirical problem — from raw data to code to results — in a format that the audience can follow, replicate, and extend.
+
+The series is designed for researchers, PhD students, and professionals who want to go beyond theory and engage directly with the tools and methods used at the frontier of applied economics.
 
 ---
 
@@ -45,13 +47,14 @@ The series is designed for researchers, PhD students, and professionals who want
 
 ## Topics Covered
 
-The series spans methods across:
-
-- **Time Series** — VAR, ARIMA, state-space models, cointegration
-- **Forecasting** — out-of-sample evaluation, forecast combination, density forecasting
-- **Causal Inference** — DiD, IV, RDD, synthetic control
-- **Macro & Finance** — DSGE, factor models, asset pricing, risk
-- **Machine Learning in Economics** — LASSO, random forests, nowcasting
+| Area | Methods |
+|------|---------|
+| 📈 **Time Series** | VAR, SVAR, ARIMA, state-space models, cointegration, Kalman filter |
+| 🔮 **Forecasting** | Out-of-sample evaluation, forecast combination, density forecasting, scenario analysis |
+| 📐 **Econometrics** | DiD, IV, RDD, synthetic control, panel data, quantile regression |
+| ⚙️ **Macro & DSGE** | DSGE, RBC, New Keynesian, factor models, asset pricing |
+| 🤖 **ML in Economics** | LASSO, random forests, gradient boosting, nowcasting, neural networks |
+| 💹 **Finance & Quant** | Portfolio optimization, volatility modeling, Monte Carlo, stress testing |
 
 ---
 
@@ -61,23 +64,48 @@ Each episode lives in its own folder. Clone the full series or a single episode:
 
 ```bash
 # Full series
-git clone https://github.com/your-org/EconLab-with-the-Experts.git
+git clone https://github.com/juan-damico/forecasting-economics.git
 
-# Single episode
-git clone --filter=blob:none --sparse https://github.com/your-org/EconLab-with-the-Experts.git
-cd EconLab-with-the-Experts
-git sparse-checkout set Episode-01-VAR-Forecasting
+# Single episode (sparse checkout)
+git clone --filter=blob:none --sparse https://github.com/juan-damico/forecasting-economics.git
+cd forecasting-economics
+git sparse-checkout set EconLab-with-the-Experts/Episode-01-VAR-Forecasting
 ```
 
 ---
 
-## Contributing & Presenting
+## 🎙️ Call for Presenters
 
-Are you an economist or practitioner interested in presenting an episode?
+**EconLab is actively seeking experts to present in upcoming episodes.**
 
-We welcome applications from PhD researchers, faculty, and industry professionals working on applied topics in economics, finance, and related fields.
+The series addresses a persistent gap in academic training: while most research is communicated in theoretical terms, there is limited exposure to **practical implementation using real data and replicable workflows**. EconLab bridges this gap by centering every session on a hands-on, reproducible application.
+
+**Who presents:**
+
+- PhD economists and academic researchers
+- Faculty and professors with applied work
+- Domain experts with a strong quantitative focus
+
+**What the format looks like:**
+
+- 20–45 minute session hosted via Teams or similar platform
+- Structured around a live implementation: slides + code + data
+- Moderated Q&A focused on facilitating discussion, not critique
+- Conversational and accessible — rigorous content, relaxed delivery
+
+**What you get:**
+
+- Exposure to a global audience of economists, researchers, and practitioners
+- Promotion across YouTube, LinkedIn, Medium, Instagram, and TikTok
+- A replicable GitHub repository showcasing your work
+- Increased visibility for citations, collaborations, and professional opportunities
+- Your professional links shared with the audience at the end of the session
+
+**Interested in presenting?**
 
 📧 [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com)
+
+Selected presenters will receive a detailed brochure with guidelines, slide templates, and all supporting materials needed to prepare and deliver their session.
 
 ---
 
@@ -87,7 +115,7 @@ All content in this repository is licensed under [CC BY-NC-ND 4.0](https://creat
 
 © **Forecasting Economics — EconLab with Experts**. All rights reserved.
 
-Content may not be used for commercial purposes or reproduced without proper citation. Each episode's intellectual content belongs to its presenter as the author. For permissions, contact [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com).
+Content may not be used for commercial purposes or reproduced without proper citation. Each episode's intellectual content belongs to its presenter as the intellectual author. For permissions, contact [juan.damico@forecastingeconomics.com](mailto:juan.damico@forecastingeconomics.com).
 
 ---
 
