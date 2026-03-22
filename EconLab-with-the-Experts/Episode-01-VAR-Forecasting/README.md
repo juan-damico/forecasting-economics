@@ -13,7 +13,7 @@
 <img src="presenter/jamel.jpg" width="110" align="left" style="margin-right:16px; margin-bottom:8px;">
 
 **Jamel Saadoui, PhD** · University X  
-*Applied Economics · EconLab*  
+*Current Role (i.e., Professor, Researcher, Economist at XX, etc.*  
 Fields: Applied Macroeconomics · Political Economics · International Economics
 
 📧 [email@domain.com](mailto:email@domain.com) &nbsp;·&nbsp;
