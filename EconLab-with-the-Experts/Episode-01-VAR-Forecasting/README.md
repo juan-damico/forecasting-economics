@@ -188,4 +188,4 @@ For permissions, licensing inquiries, or any questions on proper use, contact:
  
 ---
  
-<sub>EconLab · Applied Economics Tutorial Series · 2025</sub>
+<sub>EconLab with Experts · Applied Economics Tutorial Series · Forecasting Economics · 2026 </sub>
