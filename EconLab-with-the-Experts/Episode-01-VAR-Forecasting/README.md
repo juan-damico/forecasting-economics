@@ -77,3 +77,7 @@ The figure illustrates the response of one variable to a shock in another, highl
 ## Replication
 
 Run the main script:
+
+## Video Tutorial
+
+[![Watch the tutorial](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
