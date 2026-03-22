@@ -2,11 +2,10 @@
 
 ## Presenter
 
-<img src="presenter/jamel.jpg" width="100" align="left" style="margin-right:16px">
+<img src="presenter/jamel.jpg" width="90" align="left" style="margin-right:16px">
 
-**Jamel Saadoui, PhD**  
-University X · EconLab  
-Applied Economics
+**Jamel Saadoui, PhD** · University X  
+*Applied Economics · EconLab*  
 
 📧 [email@domain.com](mailto:email@domain.com) &nbsp;·&nbsp;
 🔗 [LinkedIn](https://linkedin.com) &nbsp;·&nbsp;
@@ -14,6 +13,8 @@ Applied Economics
 📑 [SSRN](https://ssrn.com)
 
 <br clear="left">
+
+---
 
 ## Overview
 
