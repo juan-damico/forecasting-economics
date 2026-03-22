@@ -23,7 +23,7 @@
 
 **Jamel Saadoui, PhD** · University of Paris 8 
 
-*Current Role: Full time Professor of Economics *  
+*Current Role: Full time Professor of Economics*  
 Fields: Applied Macroeconomics · Political Economics · International Economics
 
 📧 [email@domain.com](mailto:email@domain.com) &nbsp;·&nbsp;
