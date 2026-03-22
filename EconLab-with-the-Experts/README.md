@@ -1,16 +1,15 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=DM+Mono&size=11&duration=0&pause=0&color=4a7c59&center=true&vCenter=true&width=300&lines=ECONLAB+WITH+THE+EXPERTS">
-  <img src="https://readme-typing-svg.demolab.com?font=DM+Mono&size=11&duration=0&pause=0&color=4a7c59&center=true&vCenter=true&width=300&lines=ECONLAB+WITH+THE+EXPERTS" alt="EconLab">
-</picture>
+<br/>
 
-# Where Theory Meets Implementation
+<img src="https://raw.githubusercontent.com/juan-damico/forecasting-economics/main/assets/EconLab2.png" width="500" alt="EconLab with the Experts"/>
+
+<br/><br/>
 
 **Expert-led · Fully reproducible · Open access**
 
-[![Subscribe](https://img.shields.io/badge/▶_Subscribe-Forecasting_Economics-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg?sub_confirmation=1)
-[![Website](https://img.shields.io/badge/🌐_Website-forecastingeconomics.com-0d1117?style=for-the-badge)](https://www.forecastingeconomics.com)
+[![Subscribe](https://img.shields.io/badge/Subscribe-Forecasting_Economics-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg?sub_confirmation=1)
+[![Website](https://img.shields.io/badge/Website-forecastingeconomics.com-0d1117?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.forecastingeconomics.com)
 
 [![License](https://img.shields.io/badge/CC_BY--NC--ND_4.0-lightgrey?style=flat-square)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![Status](https://img.shields.io/badge/status-active-4a7c59?style=flat-square)]()
@@ -69,11 +68,11 @@ Every episode ships as a self-contained GitHub repository with everything needed
 
 ---
 
-## 🎙️ Call for Presenters
+## Call for Presenters
 
 **EconLab is actively seeking experts to present in upcoming episodes.**
 
-We welcome PhD economists, academic researchers, faculty, and practitioners with a strong applied focus who are interested in sharing their work with a **global community of economists, students, and enthusiasts**.
+We welcome PhD economists, academic researchers, faculty, and practitioners with a strong applied focus who are interested in sharing their work with a global community of economists, students, and enthusiasts.
 
 Reach out and you will receive a full package with all the details, guidelines, and templates needed to prepare your session.
 
@@ -96,10 +95,9 @@ Content may not be used for commercial purposes or reproduced without proper cit
 *Part of [Forecasting Economics](https://www.forecastingeconomics.com) — Applied econometrics, time series analysis, and forecasting.*
 
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UC5P21WGFO4WRUlAiGLcwymg?sub_confirmation=1)
-[![Website](https://img.shields.io/badge/Website-0d1117?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.forecastingeconomics.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/juan-damico)
-[![Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@juan-damico)
-[![All Links](https://img.shields.io/badge/All_Links-orange?style=for-the-badge)](https://juandamico.start.page/)
+[![Website](https://img.shields.io/badge/Website-0d1117?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.forecastingeconomics.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/juandamico)
+[![Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@juan.damico)
 
 <sub>EconLab with Experts · Forecasting Economics · 2026</sub>
 
